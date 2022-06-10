@@ -1,10 +1,10 @@
 /* accordion
 --------------------------*/
-.accordion {
+.js-accordion-wrapper {
     margin: 20px 0; width:100%;
 }
 
-.accordion .accordion-trigger {
+.js-accordion-wrapper .accordion-trigger {
     color: #000;
     font-size: 16px;
     border: 2px solid #000;
@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-.accordion .accordion-trigger:after {
+.js-accordion-wrapper .accordion-trigger:after {
     content: "";
     width: 8px;
     height: 8px;
@@ -37,17 +37,17 @@
     top: -4px;
 }
 
-.accordion.is-open .accordion-trigger:after {
+.js-accordion-wrapper.is-open .accordion-trigger:after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: 0;
 }
 
 @media(min-width: 737px) {
-    .accordion accordion-content {
+    .js-accordion-wrapper accordion-content {
         display: block !important;
     }
-    .accordion accordion-trigger {
+    .js-accordion-wrapper accordion-trigger {
         display: none !important;
     }
 }
