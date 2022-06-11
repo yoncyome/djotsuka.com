@@ -42,14 +42,14 @@
     transform: rotate(-45deg);
     top: 0;
 }
+.js-accordion-wrapper .js-accordion-trigger {display: none}
 
-@media(min-width: 737px) {
-    .js-accordion-wrapper accordion-content {
-        display: block !important;
-    }
-    .js-accordion-wrapper accordion-trigger {
-        display: none !important;
-    }
+
+@media(max-width: 767px) {
+.trackList .js-accordion-wrapper .js-accordion-content {display: none;}
+.js-accordion-wrapper .js-accordion-trigger,
+.js-accordion-wrapper .js-accordion-trigger {
+    display: block;}
 }
 
 

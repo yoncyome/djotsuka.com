@@ -3,7 +3,7 @@
 // ========================================================================= //
 $(function() {
 	var $target = $('.js-accordion-wrapper');
-	$target.wrapInner('<div class="accordion-content js-accordion-content" style="display:none;"></div>');
+	$target.wrapInner('<div class="accordion-content js-accordion-content"></div>');
 	$target.append('<button class="accordion-trigger js-accordion-trigger">曲目リスト</button>');
 
 	$target.on('click', '.js-accordion-trigger', function() {
